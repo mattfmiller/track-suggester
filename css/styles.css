@@ -18,18 +18,28 @@
   display: none;
 }
 
-.container {
+.container-fluid {
   margin-top: 20px;
+  font-family: helvetica;
+  color: #4a4a4a;
 }
 
 .jumbotron {
   text-align: center;
   padding: 50px 0px;
-  background-color: #969696;
-  color: White;
+  background-color: white;
+
+}
+
+.jumbotron img {
+  margin: 0px 20px;
+}
+
+.jumbotron h1 {
+  font-size: 60px;
 }
 
 .card {
   padding: 15px;
-  background-color: lightgrey; 
+  background-color: ;
 }
