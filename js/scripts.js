@@ -16,18 +16,18 @@ $(document).ready(function() {
     var inputBackendPace = $("#backend-pace").val().charAt(0);
 
 
-    console.log(inputName);
-    console.log(inputFrontendBackend);
-    console.log(inputMobileDesktop);
-    console.log(inputMacPc);
-    console.log(inputBackendSize);
-    console.log(inputBackendPace);
+    // console.log(inputName);
+    // console.log(inputFrontendBackend);
+    // console.log(inputMobileDesktop);
+    // console.log(inputMacPc);
+    // console.log(inputBackendSize);
+    // console.log(inputBackendPace);
 
     if (inputFrontendBackend === "frontend") {
       $("#css").fadeIn("slow");
-    } else if (inputFrontendBackend === "backend" && (inputMacPc === "A" && inputBackendSize === "A")) {
+    } else if (inputFrontendBackend === "backend" && ((inputMacPc === "A" || inputMacPc === "C") && inputBackendSize === "A")) {
       $("#c-sharp").fadeIn();
-    } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && inputBackendSize === "A")) {
+    } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && (inputBackendSize === "A" || inputBackendSize === "C"))) {
       $("#java").fadeIn();
   } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "B" || inputBackendSize === "C"))) {
       $("#ruby").fadeIn();
