@@ -37,7 +37,7 @@
 
 .jumbotron {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background-color: white;
 }
 
@@ -50,9 +50,14 @@
   font-size: 60px;
 }
 
+p.intro {
+  font-size: 18px
+}
+
 .card {
   padding: 15px;
   background-color: #f4f4f4;
+  margin: 20px;
 }
 
 /*.card h4 {
