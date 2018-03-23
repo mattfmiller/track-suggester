@@ -22,6 +22,10 @@ $(document).ready(function() {
     console.log(inputBackendSize);
     console.log(inputBackendPace);
 
+    if (inputFrontendBackend === "frontend") {
+      $("#css").show();
+    }
+
     event.preventDefault();
   });
 });
