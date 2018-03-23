@@ -23,15 +23,20 @@ $(document).ready(function() {
     console.log(inputBackendPace);
 
     if (inputFrontendBackend === "frontend") {
-      $("#css").show();
+      $("#form").hide();
+      $("#css").fadeIn("slow");
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "A" && inputBackendSize === "A")) {
-      $("#c-sharp").show();
+      $("#form").hide();
+      $("#c-sharp").fadeIn();
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && inputBackendSize === "A")) {
-      $("#java").show();
+      $("#form").hide();
+      $("#java").fadeIn();
     } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "C" || inputBackendSize === "D"))) {
-      $("#php").show();
+      $("#form").hide();
+      $("#php").fadeIn();
     } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && inputBackendSize === "B")) {
-      $("#ruby").show();
+      $("#form").hide();
+      $("#ruby").fadeIn();
     }
 
     event.preventDefault();
