@@ -15,7 +15,7 @@
         <h1>WHAT PROGRAMMING LANGUAGE SHOULD I LEARN?</h1>
         <h2><a href="https://www.epicodus.com/css"><img src="img/css.png" alt="css logo"></a><a href="https://www.epicodus.com/c-sharp"><img src="img/csharp.png" alt="c sharp logo"></a><a href="https://www.epicodus.com/java"><img src="img/java.png" alt="java logo"></a><a href="https://www.epicodus.com/php"><img src="img/php.png" alt="php logo"></a><a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby logo"></a></h2>
       </div>
-      <div id="form">
+      <div id="question1">
         <p class="intro">Welcome prospective student! This page is a tool to help you select an Epicodus track that will best fit your needs and interests. Please take some time to fill out the following information.</p>
         <form>
           <div class="card">
@@ -26,7 +26,14 @@
 <!-- error for no name -->
             </div>
             <p id="name-error">Please enter your name</p>
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+        </form>
+      </div>
 <!-- Radio Buttons for front end vs backend  -->
+      <div id="question2">
+        <form>
+          <div class="card">
             <div class="form-group">
               <label for="frontend-backend">Which option best describes your interest?</label>
               <div class="radio">
@@ -42,7 +49,14 @@
                 </label>
               </div>
             </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+        </form>
+      </div>
     <!-- mobile vs desktop -->
+      <div id="question3">
+        <form>
+          <div class="card">
             <div class="form-group">
               <label for="mobile-desktop">Are you more interested in mobile or desktop?</label>
               <select class="form-control" id="mobile-desktop">
@@ -51,7 +65,14 @@
                 <option>C. I don't really have a preference between mobile or desktop</option>
               </select>
             </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+        </form>
+      </div>
 <!-- mac vs pc -->
+      <div id="question4">
+        <form>
+          <div class="card">
             <div class="form-group">
               <label for="mac-pc">Are you more interested in Mac/iOS or PC/Android</label>
               <select class="form-control" id="mac-pc">
@@ -60,7 +81,14 @@
                 <option>C. I don't really have a preference between Mac/iOS or PC/Android</option>
               </select>
             </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+        </form>
+      </div>
 <!-- java vs c# vs php vs ruby by size -->
+      <div id="question5">
+        <form>
+          <div class="card">
             <div class="form-group">
               <label for="backend-size">What sort of environment do you want to work in?</label>
               <select class="form-control" id="backend-size">
@@ -70,7 +98,14 @@
                 <option>D. I don't really have a preference how big the company is I work for</option>
               </select>
             </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+        </form>
+      </div>
 <!-- java vs c# vs php vs ruby by pace -->
+      <div id="question 6">
+        <form>
+          <div class="card">
             <div class="form-group">
               <label for="backend-pace">What sort of projects do you want to work on?</label>
               <select class="form-control" id="backend-pace">
@@ -80,10 +115,9 @@
               </select>
             </div>
           </div>
-<!-- Submit button -->
           <button type="submit" class="btn btn-secondary">SUBMIT</button>
-        </div>
-      </form>
+        </form>
+      </div>
 <!-- language descriptions -->
       <div class="languages">
         <div id="css" class="card">
