@@ -26,7 +26,12 @@ $(document).ready(function() {
       $("#css").show();
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "A" && inputBackendSize === "A")) {
       $("#c-sharp").show();
-    }
+    } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && inputBackendSize === "A")) {
+      $("#java").show();
+    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B"  inputBackendSize === "A" || "C")) {
+      $("#PHP").show();
+    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && inputBackendSize === "B")) {
+      $("#PHP").show();
 
     event.preventDefault();
   });
