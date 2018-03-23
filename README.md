@@ -6,7 +6,7 @@
 
 ## Description
 
-Epicodus offers several different tracks that address different programing languages. This webpage is an interactive tool that will help prospective students learn about and select which track is best suited towards their interests. Please visit the site at <a href = "https://mattfmiller.github.io/track-suggester/"></a>
+Epicodus offers several different tracks that address different programing languages. This webpage is an interactive tool that will help prospective students learn about and select which track is best suited towards their interests. Please visit the site <a href = "https://mattfmiller.github.io/track-suggester/">here.</a>
 
 ## Setup/Installation Requirements
 
