@@ -18,17 +18,21 @@
   display: none;
 }
 
+#epicodus-logo {
+  width: 150px;
+  /*float: left;*/
+}
+
 .container-fluid {
-  margin-top: 20px;
   font-family: helvetica;
   color: #4a4a4a;
+  margin-top: -60px;
 }
 
 .jumbotron {
   text-align: center;
-  padding: 50px 0px;
+  padding-bottom: 50px;
   background-color: white;
-
 }
 
 .jumbotron img {
@@ -42,4 +46,11 @@
 .card {
   padding: 15px;
   background-color: ;
+}
+
+.btn-secondary {
+  background: #00b3b4;
+  border-color: #00b3b4;
+  color: white;
+  padding: 10px 15px;
 }
