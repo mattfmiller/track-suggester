@@ -53,14 +53,11 @@ $(document).ready(function() {
     $("#java").hide();
     $("#php").hide();
     $("#ruby").hide();
-    $("#form").hide();
+    $("#question1").hide();
+    $("#question2").hide();
 
     var inputName = $("#name").val();
-    var inputFrontendBackend = $("input:radio[name=frontend-backend]:checked").val();
-    var inputMobileDesktop = $("#mobile-desktop").val().charAt(0);
-    var inputMacPc = $("#mac-pc").val().charAt(0);
-    var inputBackendSize = $("#backend-size").val().charAt(0);
-    var inputBackendPace = $("#backend-pace").val().charAt(0);
+
 
 
     // console.log(inputName);
@@ -74,7 +71,23 @@ $(document).ready(function() {
       $("#question1").show();
       $("#name-error").fadeIn();
     } else {
-      $()
+      $("#question2").fadeIn();
+    }
+
+    event.preventDefault();
+  });
+
+  $("form").submit(function(event) {
+
+
+
+      var inputFrontendBackend = $("input:radio[name=frontend-backend]:checked").val();
+
+
+      var inputMobileDesktop = $("#mobile-desktop").val().charAt(0);
+      var inputMacPc = $("#mac-pc").val().charAt(0);
+      var inputBackendSize = $("#backend-size").val().charAt(0);
+      var inputBackendPace = $("#backend-pace").val().charAt(0);
 
 
       if (inputFrontendBackend === "frontend") {
@@ -88,7 +101,7 @@ $(document).ready(function() {
       } else {
         $("#php").fadeIn();
       }
-    }
+    });
 
     $(".user-name").text(inputName)
 
