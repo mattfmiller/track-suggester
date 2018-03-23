@@ -29,7 +29,7 @@
   margin-left: 15px;
 }
 
-.container-fluid {
+.container {
   font-family: helvetica;
   color: #4a4a4a;
   margin-top: -60px;
@@ -42,7 +42,7 @@
 }
 
 .jumbotron img {
-  margin: 0px 20px;
+  margin: 20px;
 }
 
 .jumbotron h1 {
@@ -60,11 +60,6 @@ p.intro {
   margin: 20px;
 }
 
-/*.card h4 {
-  border-radius: 5px;
-  background-color: white;
-  padding: 10px;
-}*/
 
 .btn-secondary {
   background: #00b3b4;
@@ -79,6 +74,6 @@ p.intro {
 }
 
 .languages img {
-  margin: 0px 20px;
+  margin: 20px;
   height: 75px;
 }

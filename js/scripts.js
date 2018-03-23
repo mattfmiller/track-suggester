@@ -15,13 +15,6 @@ $(document).ready(function() {
     var inputBackendSize = $("#backend-size").val().charAt(0);
     var inputBackendPace = $("#backend-pace").val().charAt(0);
 
-
-    // console.log(inputName);
-    // console.log(inputFrontendBackend);
-    // console.log(inputMobileDesktop);
-    // console.log(inputMacPc);
-    // console.log(inputBackendSize);
-    // console.log(inputBackendPace);
     if (inputName === "") {
       $("#form").show();
       $("#name-error").fadeIn();
