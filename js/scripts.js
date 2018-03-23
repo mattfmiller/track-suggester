@@ -28,10 +28,11 @@ $(document).ready(function() {
       $("#c-sharp").show();
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && inputBackendSize === "A")) {
       $("#java").show();
-    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B"  inputBackendSize === "A" || "C")) {
-      $("#PHP").show();
+    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "C" || inputBackendSize === "D"))) {
+      $("#php").show();
     } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && inputBackendSize === "B")) {
-      $("#PHP").show();
+      $("#ruby").show();
+    }
 
     event.preventDefault();
   });
