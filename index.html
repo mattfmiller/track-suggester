@@ -20,20 +20,41 @@
         </div>
   <!-- Radio Buttons for front end vs backend  -->
         <div class="form-group">
-          <label for="front-back">Choose which sounds most appealing to you</label>
+          <label for="frontend-backend">Choose which sounds most appealing to you</label>
           <div class="radio">
             <label>
-              <input type="radio" name="front-back" value="front" checked>
+              <input type="radio" name="frontend-backend" value="frontend" checked>
               I am more interested in how a webpage looks and behaves.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="front-back" value="back">
+              <input type="radio" name="frontend-backend" value="backend">
               I am more interested in the inner workings of how a webpage functions.
             </label>
           </div>
         </div>
+<!-- mobile vs desktop -->
+        <div class="form-group">
+          <label for="mobile-desktop">Are you more interested in mobile or desktop?</label>
+          <select class="form-control" id="mobile-desktop">
+            <option>I want to work on mobile apps</option>
+            <option>I want to work on desktop apps</option>
+            <option> I don't really have a preference between mobile or desktop</option>
+          </select>
+        </div>
+<!-- java vs c# vs php vs ruby -->
+        <div class="form-group">
+          <label for="backend-track">What sort of environment do you want to work in?</label>
+          <select class="form-control" id="backend-track">
+            <option>I want to work for a large company or business</option>
+            <option>I want to work for a smaller company or a startup</option>
+            <option>I'd like to work for a mid-sized company</option>
+            <option> I don't really have a preference how big the company is I work for</option>
+          </select>
+        </div>
+<!-- Submit button -->
+        <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
     </div>
   </body>
