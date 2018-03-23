@@ -11,12 +11,30 @@
   <body>
     <div class="container">
       <h1>Epicodus Track Selector</h1>
-      <p>Welcome prospective student! This is page is a tool to help yopu select an Epicodus track that will best fit your needs and intersts. Please take some time to fill out the information below.</p>
+      <p class="intro">Welcome prospective student! This is page is a tool to help yopu select an Epicodus track that will best fit your needs and intersts. Please take some time to fill out the information below.</p>
+      <form>
+  <!-- Form for user name -->
+        <div class="form-group">
+          <label for="name">First, what is your full name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+  <!-- Radio Buttons for front end vs backend  -->
+        <div class="form-group">
+          <label for="front-back">Choose which sounds most appealing to you</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="front-back" value="front" checked>
+              I am more interested in how a webpage looks and behaves.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="front-back" value="back">
+              I am more interested in the inner workings of how a webpage functions.
+            </label>
+          </div>
+        </div>
+      </form>
     </div>
-<!-- Form for user name -->
-    <div class="form-group">
-      <label for="name">First, what is your full name></label>
-      <input id="name" class="form-control" type="text">
-    </div> 
   </body>
 </html>
