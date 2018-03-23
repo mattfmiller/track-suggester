@@ -17,3 +17,19 @@
 #ruby {
   display: none;
 }
+
+.container {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #969696;
+  color: White;
+}
+
+.card {
+  padding: 15px;
+  background-color: lightgrey; 
+}
