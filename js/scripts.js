@@ -6,6 +6,7 @@ $(document).ready(function() {
     $("#java").hide();
     $("#php").hide();
     $("#ruby").hide();
+    $("#form").hide();
 
     var inputName = $("#name").val();
     var inputFrontendBackend = $("input:radio[name=frontend-backend]:checked").val();
@@ -23,20 +24,15 @@ $(document).ready(function() {
     console.log(inputBackendPace);
 
     if (inputFrontendBackend === "frontend") {
-      $("#form").hide();
       $("#css").fadeIn("slow");
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "A" && inputBackendSize === "A")) {
-      $("#form").hide();
       $("#c-sharp").fadeIn();
     } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && inputBackendSize === "A")) {
-      $("#form").hide();
       $("#java").fadeIn();
-    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "C" || inputBackendSize === "D"))) {
-      $("#form").hide();
-      $("#php").fadeIn();
-    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && inputBackendSize === "B")) {
-      $("#form").hide();
+  } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "B" || inputBackendSize === "C"))) {
       $("#ruby").fadeIn();
+    } else {
+      $("#php").fadeIn();
     }
 
     event.preventDefault();
