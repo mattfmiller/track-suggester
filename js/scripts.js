@@ -35,6 +35,8 @@ $(document).ready(function() {
       $("#php").fadeIn();
     }
 
+    $(".user-name").text(inputName)
+
     event.preventDefault();
   });
 });
