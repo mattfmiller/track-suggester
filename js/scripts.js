@@ -24,6 +24,8 @@ $(document).ready(function() {
 
     if (inputFrontendBackend === "frontend") {
       $("#css").show();
+    } else if (inputFrontendBackend === "backend" && (inputMacPc === "A" && inputBackendSize === "A")) {
+      $("#c-sharp").show();
     }
 
     event.preventDefault();
