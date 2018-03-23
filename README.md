@@ -6,19 +6,16 @@
 
 ## Description
 
-Epicodus offers several different tracks that address different programing languages. This webpage is an interactive tool that will help prospective students learn about and select which track is best suited towards their interests. PLease visit the site at </a href = ""></a>
+Epicodus offers several different tracks that address different programing languages. This webpage is an interactive tool that will help prospective students learn about and select which track is best suited towards their interests.
 
 ## Setup/Installation Requirements
 
 * Clone repository from https://github.com/mattfmiller/track-suggester
 * Open in browser
 
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+scripts.js is very messy and incomplete leading to the page not running. This branch exists only for personal use later. please see the master branch for working code or visit the page <a href ="https://mattfmiller.github.io/track-suggester/">here.</a>
 
 ## Support and contact details
 
