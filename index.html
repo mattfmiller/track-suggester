@@ -19,12 +19,14 @@
         <p class="intro">Welcome prospective student! This is page is a tool to help you select an Epicodus track that will best fit your needs and intersts. Please take some time to fill out the information below.</p>
         <form>
           <div class="card">
-      <!-- Form for user name -->
+<!-- Form for user name -->
             <div class="form-group">
               <label for="name">First, what is your full name?</label>
               <input id="name" class="form-control" type="text">
+<!-- error for no name -->
             </div>
-      <!-- Radio Buttons for front end vs backend  -->
+            <p id="name-error">Please enter your name</p>
+<!-- Radio Buttons for front end vs backend  -->
             <div class="form-group">
               <label for="frontend-backend">Which option best describes your interest?</label>
               <div class="radio">
@@ -49,7 +51,7 @@
                 <option>C. I don't really have a preference between mobile or desktop</option>
               </select>
             </div>
-    <!-- mac vs pc -->
+<!-- mac vs pc -->
             <div class="form-group">
               <label for="mac-pc">Are you more interested in Mac/iOS or PC/Android</label>
               <select class="form-control" id="mac-pc">
@@ -58,7 +60,7 @@
                 <option>C. I don't really have a preference between Mac/iOS or PC/Android</option>
               </select>
             </div>
-    <!-- java vs c# vs php vs ruby by size -->
+<!-- java vs c# vs php vs ruby by size -->
             <div class="form-group">
               <label for="backend-size">What sort of environment do you want to work in?</label>
               <select class="form-control" id="backend-size">
@@ -68,7 +70,7 @@
                 <option>D. I don't really have a preference how big the company is I work for</option>
               </select>
             </div>
-    <!-- java vs c# vs php vs ruby by pace -->
+<!-- java vs c# vs php vs ruby by pace -->
             <div class="form-group">
               <label for="backend-pace">What sort of projects do you want to work on?</label>
               <select class="form-control" id="backend-pace">
@@ -78,7 +80,7 @@
               </select>
             </div>
           </div>
-    <!-- Submit button -->
+<!-- Submit button -->
           <button type="submit" class="btn btn-secondary">SUBMIT</button>
         </div>
       </form>

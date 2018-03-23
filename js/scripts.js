@@ -22,17 +22,21 @@ $(document).ready(function() {
     // console.log(inputMacPc);
     // console.log(inputBackendSize);
     // console.log(inputBackendPace);
-
-    if (inputFrontendBackend === "frontend") {
-      $("#css").fadeIn("slow");
-    } else if (inputFrontendBackend === "backend" && ((inputMacPc === "A" || inputMacPc === "C") && inputBackendSize === "A")) {
-      $("#c-sharp").fadeIn();
-    } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && (inputBackendSize === "A" || inputBackendSize === "C"))) {
-      $("#java").fadeIn();
-  } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "B" || inputBackendSize === "C"))) {
-      $("#ruby").fadeIn();
+    if (inputName === "") {
+      $("#form").show();
+      $("#name-error").fadeIn();
     } else {
-      $("#php").fadeIn();
+      if (inputFrontendBackend === "frontend") {
+        $("#css").fadeIn("slow");
+      } else if (inputFrontendBackend === "backend" && ((inputMacPc === "A" || inputMacPc === "C") && inputBackendSize === "A")) {
+        $("#c-sharp").fadeIn();
+      } else if (inputFrontendBackend === "backend" && (inputMacPc === "B" && (inputBackendSize === "A" || inputBackendSize === "C"))) {
+        $("#java").fadeIn();
+    } else if (inputFrontendBackend === "backend" && (inputBackendPace === "B" && (inputBackendSize === "B" || inputBackendSize === "C"))) {
+        $("#ruby").fadeIn();
+      } else {
+        $("#php").fadeIn();
+      }
     }
 
     $(".user-name").text(inputName)

@@ -1,3 +1,8 @@
+#name-error {
+  display: none;
+  color: orange;
+}
+
 #css {
   display: none;
 }
@@ -37,6 +42,7 @@
 
 .jumbotron img {
   margin: 0px 20px;
+
 }
 
 .jumbotron h1 {
@@ -47,12 +53,6 @@
   padding: 15px;
   background-color: ;
 }
-
-/*.form-control:focus {
-  background-color: #white;
-  color: white;
-  box-shadow: 0 0 0 0.2rem #00b3b4;
-}*/
 
 .btn-secondary {
   background: #00b3b4;
