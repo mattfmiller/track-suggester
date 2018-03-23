@@ -48,9 +48,25 @@
   background-color: ;
 }
 
+/*.form-control:focus {
+  background-color: #white;
+  color: white;
+  box-shadow: 0 0 0 0.2rem #00b3b4;
+}*/
+
 .btn-secondary {
   background: #00b3b4;
   border-color: #00b3b4;
   color: white;
   padding: 10px 15px;
+  margin: 15px 0px;
+}
+
+.languages {
+  text-align: center;
+}
+
+.languages img {
+  margin: 0px 20px;
+  height: 75px;
 }

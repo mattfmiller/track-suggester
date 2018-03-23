@@ -15,91 +15,98 @@
         <h1>Epicodus Track Selector</h1>
         <h2><img src="img/css.png" alt="css logo"><img src="img/csharp.png" alt="c sharp logo"><img src="img/java.png" alt="java logo"><img src="img/php.png" alt="php logo"><img src="img/ruby.png" alt="ruby logo"></h2>
       </div>
-      <div id="form" class="card">
+      <div id="form">
         <p class="intro">Welcome prospective student! This is page is a tool to help you select an Epicodus track that will best fit your needs and intersts. Please take some time to fill out the information below.</p>
         <form>
-    <!-- Form for user name -->
-          <div class="form-group">
-            <label for="name">First, what is your full name?</label>
-            <input id="name" class="form-control" type="text">
-          </div>
-    <!-- Radio Buttons for front end vs backend  -->
-          <div class="form-group">
-            <label for="frontend-backend">Which option best describes your interest?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="frontend-backend" value="frontend" checked>
-                I am more interested in how a webpage or app looks and behaves.
-              </label>
+          <div class="card">
+      <!-- Form for user name -->
+            <div class="form-group">
+              <label for="name">First, what is your full name?</label>
+              <input id="name" class="form-control" type="text">
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="frontend-backend" value="backend">
-                I am more interested in the inner workings of how a webpage or app functions.
-              </label>
+      <!-- Radio Buttons for front end vs backend  -->
+            <div class="form-group">
+              <label for="frontend-backend">Which option best describes your interest?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="frontend-backend" value="frontend" checked>
+                  I am more interested in how a webpage or app looks and behaves.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="frontend-backend" value="backend">
+                  I am more interested in the inner workings of how a webpage or app functions.
+                </label>
+              </div>
+            </div>
+    <!-- mobile vs desktop -->
+            <div class="form-group">
+              <label for="mobile-desktop">Are you more interested in mobile or desktop?</label>
+              <select class="form-control" id="mobile-desktop">
+                <option>A. I want to work on mobile apps</option>
+                <option>B. I want to work on desktop apps</option>
+                <option>C. I don't really have a preference between mobile or desktop</option>
+              </select>
+            </div>
+    <!-- mac vs pc -->
+            <div class="form-group">
+              <label for="mac-pc">Are you more interested in Mac/iOS or PC/Android</label>
+              <select class="form-control" id="mac-pc">
+                <option>A. I want to work on Mac/iOS</option>
+                <option>B. I want to work on PC/Android</option>
+                <option>C. I don't really have a preference between Mac/iOS or PC/Android</option>
+              </select>
+            </div>
+    <!-- java vs c# vs php vs ruby by size -->
+            <div class="form-group">
+              <label for="backend-size">What sort of environment do you want to work in?</label>
+              <select class="form-control" id="backend-size">
+                <option>A. I want to work for a large company or business</option>
+                <option>B. I want to work for a smaller company or a startup</option>
+                <option>C. I'd like to work for a mid-sized company</option>
+                <option>D. I don't really have a preference how big the company is I work for</option>
+              </select>
+            </div>
+    <!-- java vs c# vs php vs ruby by pace -->
+            <div class="form-group">
+              <label for="backend-pace">What sort of projects do you want to work on?</label>
+              <select class="form-control" id="backend-pace">
+                <option>A. I want to work on more established long term projects</option>
+                <option>B. I want to work on fast paced projects that are always changing</option>
+                <option>C. I don't really have a preference the size or pace of the projects I work on</option>
+              </select>
             </div>
           </div>
-  <!-- mobile vs desktop -->
-          <div class="form-group">
-            <label for="mobile-desktop">Are you more interested in mobile or desktop?</label>
-            <select class="form-control" id="mobile-desktop">
-              <option>A. I want to work on mobile apps</option>
-              <option>B. I want to work on desktop apps</option>
-              <option>C. I don't really have a preference between mobile or desktop</option>
-            </select>
-          </div>
-  <!-- mac vs pc -->
-          <div class="form-group">
-            <label for="mac-pc">Are you more interested in Mac/iOS or PC/Android</label>
-            <select class="form-control" id="mac-pc">
-              <option>A. I want to work on Mac/iOS</option>
-              <option>B. I want to work on PC/Android</option>
-              <option>C. I don't really have a preference between Mac/iOS or PC/Android</option>
-            </select>
-          </div>
-  <!-- java vs c# vs php vs ruby by size -->
-          <div class="form-group">
-            <label for="backend-size">What sort of environment do you want to work in?</label>
-            <select class="form-control" id="backend-size">
-              <option>A. I want to work for a large company or business</option>
-              <option>B. I want to work for a smaller company or a startup</option>
-              <option>C. I'd like to work for a mid-sized company</option>
-              <option>D. I don't really have a preference how big the company is I work for</option>
-            </select>
-          </div>
-  <!-- java vs c# vs php vs ruby by pace -->
-          <div class="form-group">
-            <label for="backend-pace">What sort of projects do you want to work on?</label>
-            <select class="form-control" id="backend-pace">
-              <option>A. I want to work on more established long term projects</option>
-              <option>B. I want to work on fast paced projects that are always changing</option>
-              <option>C. I don't really have a preference the size or pace of the projects I work on</option>
-            </select>
-          </div>
-  <!-- Submit button -->
+    <!-- Submit button -->
           <button type="submit" class="btn btn-secondary">SUBMIT</button>
         </div>
       </form>
 <!-- language descriptions -->
-      <div class="card">
+      <div class="languages">
         <div id="css">
-          <h3><span class="user-name"></span>, you might like CSS</h3>
+          <h3><span class="user-name"></span>, you might like CSS/React</h3>
+          <h4><img src="img/intro.png" alt="intro logo"><img src="img/css.png" alt="css logo"><img src="img/js.png" alt="javascript logo"><img src="img/react.png" alt="react logo"><img src="img/internship.png" alt="internship logo"><img src="img/graduation.png" alt="graduation logo"></h4>
           <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
         </div>
         <div id="c-sharp">
-          <h3><span class="user-name"></span>, you might like C#</h3>
+          <h3><span class="user-name"></span>, you might like C#/.NET</h3>
+          <h4><img src="img/intro.png" alt="intro logo"><img src="img/csharp.png" alt="c sharp logo"><img src="img/js.png" alt="javascript logo"><img  src="img/net.png" alt="net logo"><img src="img/internship.png" alt="internship logo"><img src="img/graduation.png" alt="graduation logo"></h4>
           <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
         </div>
         <div id="java">
-          <h3><span class="user-name"></span>, you might like Java</h3>
+          <h3><span class="user-name"></span>, you might like Java/Android</h3>
+          <h4><img src="img/intro.png" alt="intro logo"><img src="img/java.png" alt="java logo"><img src="img/js.png" alt="javascript logo"><img  src="img/android.png" alt="android logo"><img src="img/internship.png" alt="internship logo"><img src="img/graduation.png" alt="graduation logo"></h4>
           <p>Java is a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
         </div>
         <div id="php">
-          <h3><span class="user-name"></span>, you might like PHP</h3>
+          <h3><span class="user-name"></span>, you might like PHP/Drupal</h3>
+          <h4><img src="img/intro.png" alt="intro logo"><img src="img/php.png" alt="php logo"><img src="img/js.png" alt="javascript logo"><img  src="img/drupal.png" alt="drupal logo"><img src="img/internship.png" alt="internship logo"><img src="img/graduation.png" alt="graduation logo"></h4>
           <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
         </div>
         <div id="ruby">
-          <h3><span class="user-name"></span>, you might like Ruby</h3>
+          <h3><span class="user-name"></span>, you might like Ruby/Rails</h3>
+          <h4><img src="img/intro.png" alt="intro logo"><img src="img/ruby.png" alt="ruby logo"><img src="img/js.png" alt="javascript logo"><img  src="img/rails.png" alt="rails logo"><img src="img/internship.png" alt="internship logo"><img src="img/graduation.png" alt="graduation logo"></h4>
           <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
         </div>
       </div>
